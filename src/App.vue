@@ -2,7 +2,8 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <button @click="increment">Click me</button>
-  <span>{{ cnt }}</span>
+  <span>{{ $store.state.count }}</span>
+  <br>
   <button @click="clear">Clear</button>
 </template>
 
@@ -18,7 +19,7 @@ export default {
   },
   components: {
     HelloWorld
-  },
+  }, 
   mounted() {
     this.cnt = this.$store.state.count;
   },

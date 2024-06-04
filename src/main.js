@@ -13,6 +13,12 @@ const store = createStore({
     increment (state) {
       state.count++
     }
+  },
+  actions: {
+    
+  },
+  getters: {
+
   }
 })
 
